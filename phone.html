@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var var1; var oper;
+	function button1(u)
+	{
+		show.value=show.value + u;
+	}
+	function operator(v){
+ 	var1=show.value;
+ 	oper= v;
+ 	show.value="";
+	}
+	</script>
+	
+
+	
+</head>
+<body>
+	<center>
+		<form style="width:160px; height:315px; border:5px solid; border-radius:7px;">
+	<center>
+	<textarea style="width:145px; height:140px; " id="show" disabled="true"></textarea>
+	
+	<input type="button" onclick="operator('....')" value="...." style="width:48px; background-color: red;">
+	<input type="button" onclick="operator('b')" value="" style="width:48px; background-color: black; height: 50px;" >
+	<input type="button" onclick="operator('back')" value="Back" style="width:48px; background-color: red;"><br>
+	<input type="button" onclick="call('')" value="Ok" style="width:48px; background-color: red; float:right; float: left;">
+	<input type="button" onclick="cut('')" value="Lock" style="width:48px; background-color: red;"><br>
+	
+	
+	<input type="button" onclick="button1('1')" name="" value="1.." style="width:48px; background-color: red">
+	<input type="button" onclick="button1('2')" name="" value="2 ABC" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('3')" name="" value="3 DEF" style="width:49px ; background-color: red"><br>
+	<input type="button" onclick="button1('4')" name="" value="4 GHI" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('5')" name="" value="5 JKL" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('6')" name="" value="6 MNO" style="width:50px ; background-color: red"><br>
+	<input type="button" onclick="button1('7')" name="" value="7 PQRS" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('8')" name="" value="8 TUV" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('9')" name="" value="9 WXYZ" style="width:50px ; background-color: red"><br>
+	<input type="button" onclick="button1('*')" name="" value="*" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('0')" name="" value="0" style="width:48px ; background-color: red">
+	<input type="button" onclick="button1('#')" name="" value="#" style="width:48px ; background-color: red">
+	
+	<!-- <button style="width:40px; height:40px">2 DEF</button>
+	<button style="width:40px; height:40px">3 GHI</button>
+	<button style="width:40px; height:40px">4 JKL</button>
+	<button style="width:40px; height:40px">5 MNO</button>
+	<button style="width:40px; height:40px">6 PQR</button>
+	<button style="width:40px; height:40px">7 STUV</button>
+	<button style="width:40px; height:40px">8 WXYZ</button>
+	<button style="width:48px; height:40px">9 </button>
+	<button style="width:40px; height:40px">*</button>
+	<button style="width:40px; height:40px">0 + ABB</button>
+	<button style="width:40px; height:40px"># </button> -->
+</center>
+</form>
+	</center>
+</body>
+</html>
+<script type="text/javascript">
+
+	var customerCare= "1. Account Information 2. Tariff Plan Migration 3. Data Services 4. Roaming & INt'l Offers 5. My Services 6. ExtraTime </br> 7. More.. <br/> Enter 1,2,3...7 to proceed."
+	var cc1= "1. My Number 2. My tarrif plan  3. My Account 4. My Data Balance 5. End of call Message 0. Back 0.0. MainMenu"
+	var cc2= "1. My Num"
+	var cc3
+	function button1(u)
+	{
+		if (show.value == customerCare) {if (u=="1") {  show.value=cc1};
+	};	
+		if (show.value == customerCare) {if (u=="2") {  show.value=cc2};
+	};	
+
+		show.value=show.value+u;
+	}
+	function cut(r)
+	{
+		show.value="";
+
+	}
+	function call()
+	{
+		if (show.value=="*123#") {show.value = customerCare};
+	
+	}
+	
+</script>
